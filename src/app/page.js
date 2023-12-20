@@ -4,7 +4,9 @@ export const metadata = {
 }
 function Home() {
   return (
-    <div>      
+    <div style={{
+      minHeight:"80vh"
+    }}>      
       <p className='text-primary'>Home</p>
     </div>
   )
