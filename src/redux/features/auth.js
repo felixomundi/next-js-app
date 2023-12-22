@@ -8,13 +8,16 @@ const initialState = {
 const authSlice = createSlice({
     name:"auth",
     initialState,
-    reducers:()=>{
+    reducers:{
         Login:(state, action)=>{
-          return  state.isAuthenticated = true;
+            state.isAuthenticated = true        
         }
 
     },
-    extraReducers:(builder)=>{},
+    extraReducers:(builder)=>{
+        builder
+       
+    },
 })
 
 export const {Login} = authSlice.actions;

@@ -28,3 +28,6 @@ https://github.com/alexrusin/nextjs-starter-sequelize
 
 # redux_toolkit next-js
 https://www.youtube.com/watch?v=Yokjzp91A4o
+
+# next-js seo
+https://www.youtube.com/watch?v=kFzXOuBFN9Q
