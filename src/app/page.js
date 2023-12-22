@@ -2,7 +2,7 @@ import React from 'react'
 export const metadata = {
   title: 'Home'
 }
-function Home() {
+export function Home() {
   return (
     <div style={{
       minHeight:"80vh"
@@ -11,5 +11,3 @@ function Home() {
     </div>
   )
 }
-
-export default Home
