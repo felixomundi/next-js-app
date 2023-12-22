@@ -4,13 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BootstrapClient from './components/BootstrapClient.js';
+import StoreProvider from '@/redux/provider';
 const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar/>
-        {children}
+        <StoreProvider>{children}</StoreProvider>
         <Footer/>
         <BootstrapClient />
         </body>
