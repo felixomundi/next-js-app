@@ -1,8 +1,14 @@
 "use client"
-// import { useRef } from "react"
-import store from "./reducers"
+import { useRef } from "react"
 import { Provider } from 'react-redux'
+import { makeStore } from './reducers'
 
-export default function StoreProvider({ children }) {   
-    return <Provider store={store}>{children}</Provider>
+
+export default function StoreProvider({ children }) {
+  const storeRef = useRef()
+  if (!storeRef.current) {
+    // Create the store instance the first time this renders
+    storeRef.current = makeStore()
   }
+  return <Provider store={storeRef.current}>{children}</Provider>
+}
