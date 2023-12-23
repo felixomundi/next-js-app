@@ -23,11 +23,6 @@ npx sequelize-cli db:migrate
 npx sequelize-cli db:migrate:undo
 npx sequelize-cli db:migrate:undo:all --to 20230924102817-create-cart.js
 
-# connect to sequelize
-https://github.com/alexrusin/nextjs-starter-sequelize
-
-# redux_toolkit next-js
-https://www.youtube.com/watch?v=Yokjzp91A4o
 
 # next-js seo
 https://www.youtube.com/watch?v=kFzXOuBFN9Q
