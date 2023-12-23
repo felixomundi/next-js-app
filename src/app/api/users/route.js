@@ -1,15 +1,15 @@
 import { NextResponse } from 'next/server'
-const  {User} = require("../../../../database/models/index");
+
 export  async function GET(request) {  
   try {
-     const users = await User.findAll()
+    
      return NextResponse.json(
-        { users }, 
+        { "users":"ok" }, 
         { status: 200 });
   } catch (error) {
    if(error){
       return NextResponse.json(
-         { error: error }, 
+         { error: "rror" }, 
          { status: 500 });
    }
   }
