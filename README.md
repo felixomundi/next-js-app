@@ -18,6 +18,18 @@ npx sequelize-cli db:migrate
 npx sequelize-cli db:migrate:undo
 npx sequelize-cli db:migrate:undo:all --to 20230924102817-create-cart.js
 
-
 # next-js seo
 https://www.youtube.com/watch?v=kFzXOuBFN9Q
+
+# create prisma folder
+yarn prisma init
+# pull schema from database
+yarn prisma db pull
+# generate prisma schema
+yarn prisma generate
+# migrate tables
+- yarn prisma db push
+- npx prisma migrate dev --name init
+
+# database url 
+DATABASE_URL="mysql://root:username@localhost:3306/database_env"
