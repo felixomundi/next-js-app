@@ -5,7 +5,7 @@ export const metadata ={
 }
 function About() {
   return (
-    <div>About
+    <div>
          <Link href="/about/team">Team</Link>
     </div>
   )

@@ -6,7 +6,7 @@ export const metadata ={
 }
 function Team() {
   return (
-    <div>Team
+    <div>
          <Link href="/about">About</Link>
     </div>
    
