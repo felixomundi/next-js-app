@@ -2,8 +2,7 @@ import { NextResponse } from 'next/server'
 import client from '@/app/libs/prismadb';
 export  async function GET(request) {  
   try {
-    const users = await client.user.findMany()
-
+    const users = await client.user.findMany();
      return NextResponse.json(
         { "users":users }, 
         { status: 200 });
